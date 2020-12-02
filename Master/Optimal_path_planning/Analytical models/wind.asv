@@ -1,0 +1,8 @@
+function [wind_velocity,current_direction] = wind(x,y)
+centre = [0;0];
+dx = x - centre(1);
+dy = y - cenre(2);
+
+current_velocity = sqrt(dx^2 + dy^2);
+curent_direction = atan2(dy,dx) + pi/2;
+end
